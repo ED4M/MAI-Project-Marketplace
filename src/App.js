@@ -13,6 +13,7 @@ import LogInForm from './components/LogInForm/LogInForm.js';
 import RegistrationTypePage from './pages/RegistrationTypePage/RegistrationTypePage.js';
 import StudentRegisterPage from './pages/StudentRegisterPage/StudentRegisterPage.js';
 import CompanyRegisterPage from './pages/CompanyRegisterPage/CompanyRegisterPage.js';
+import StudentSkillsForm from './forms/student/StudentSkillsForm.js';
 
 function App() {
   return (
@@ -26,9 +27,12 @@ function App() {
           <Route path='/register-type'>
             <RegistrationTypePage />
           </Route>
-          <Route path='/register/student/about'>
+          <Route path='/register/student/*'>
             <StudentRegisterPage />
           </Route>
+          {/* <Route path='/register/student/skills'>
+            <StudentRegisterPage />
+          </Route> */}
           <Route path='/register/company'>
             <CompanyRegisterPage />
           </Route>

@@ -11,6 +11,8 @@ import {
 import './StudentRegisterPage.css';
 import { BrowserRouter, Link, Route, Router } from 'react-router-dom';
 import StudentAboutForm from '../../forms/student/StudentAboutForm';
+import StudentSkillsForm from '../../forms/student/StudentSkillsForm';
+import StudentLoginDataForm from '../../forms/student/StudentLoginDataForm';
 
 const { Title, Text } = Typography;
 const { Step } = Steps;
@@ -33,6 +35,12 @@ function StudentRegisterPage() {
           <BrowserRouter>
             <Route path="/register/student/about">
               <StudentAboutForm />
+            </Route>
+            <Route path="/register/student/skills">
+              <StudentSkillsForm />
+            </Route>
+            <Route path="/register/student/login-data">
+              <StudentLoginDataForm />
             </Route>
           </BrowserRouter>
         </Card>
